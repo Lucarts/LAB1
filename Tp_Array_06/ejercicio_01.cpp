@@ -11,5 +11,26 @@ using namespace std;
 
 int main()
 {
+  const int ENTEROS = 10;
+  int numeros[ENTEROS] = {};
+
+  cout << "Ingrese " << ENTEROS << " numeros: " << endl;
+  for (int i = 0; i < ENTEROS; i++)
+  {
+    cout << "# " << i + 1 << ": ";
+    cin >> numeros[i];
+  }
+
+  cout << endl;
+  cout << "-------------------------------------" << endl;
+  cout << "Numeros Positivos ingresados: " << endl;
+  for (int i = 0; i < ENTEROS; i++)
+  {
+    if (numeros[i] >= 0)
+    {
+      cout << numeros[i] << endl;
+    }
+  }
+  cout << "-------------------------------------" << endl;
   return 0;
 }
