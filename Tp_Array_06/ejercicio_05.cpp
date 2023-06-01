@@ -11,5 +11,28 @@ using namespace std;
 
 int main()
 {
+  const int REALES = 100;
+  int contPos = 0, contNeg = 0;
+  int numero;
+
+  cout << "Ingrese " << REALES << " numeros. " << endl;
+
+  for (int i = 0; i < REALES; i++)
+  {
+    cout << "# " << i + 1 << ": ";
+    cin >> numero;
+
+    if (numero >= 0)
+    {
+      contPos++;
+    }
+    else
+    {
+      contNeg++;
+    }
+  }
+
+  int pos[contPos];
+
   return 0;
 }
