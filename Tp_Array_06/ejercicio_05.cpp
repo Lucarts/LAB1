@@ -11,7 +11,9 @@ using namespace std;
 
 int main()
 {
-  const int REALES = 100;
+  const int REALES = 10;
+  int pos[REALES] = {};
+  int neg[REALES] = {};
   int contPos = 0, contNeg = 0;
   int numero;
 
@@ -24,15 +26,35 @@ int main()
 
     if (numero >= 0)
     {
+      pos[contPos] = numero;
       contPos++;
     }
     else
     {
+      neg[contNeg] = numero;
       contNeg++;
     }
   }
 
-  int pos[contPos];
+  pos[contPos];
+  neg[contNeg];
+
+  cout << endl;
+  cout << "-------------------------------------------------------------" << endl;
+  cout << "Cantidad de Numeros en vector POS: " << contPos << endl;
+  cout << "Los numeros del vector llamado POS son: " << endl;
+  for (int i = 0; i < contPos; i++)
+  {
+    cout << pos[i] << endl;
+  }
+  cout << endl;
+  cout << "-------------------------------------------------------------" << endl;
+  cout << "Cantidad de numeros en vector NEG: " << contNeg << endl;
+  cout << "Los numeros del vector llamado NEG son: " << endl;
+  for (int i = 0; i < contNeg; i++)
+  {
+    cout << neg[i] << endl;
+  }
 
   return 0;
 }
