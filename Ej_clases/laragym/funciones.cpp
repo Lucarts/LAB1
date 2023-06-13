@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-  cargarDatos();
+  void cargarDatos();
 
   return 0;
 }

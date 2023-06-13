@@ -17,7 +17,9 @@ El dueño del gimnasio Laragym nos pide que realicemos un programa que les permi
 // de lo contrario se usa do while
 
 #include <iostream>
+#include "funciones.h"
 using namespace std;
+
 int main()
 {
   cargarDatos();
